@@ -1,7 +1,9 @@
-name: Release Build Workflow
+name: Release Candidate Build Workflow
 
 on:
-  release:
+  push:
+    branches: [ main ]
+
 jobs:
 
   build:
